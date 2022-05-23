@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Git download Backend') {
             steps {
-                git branch: 'main', url: 'https://github.com/dex2103/Backend'
+                checkout scm
             }
         }
          stage('test test_app.py') {
